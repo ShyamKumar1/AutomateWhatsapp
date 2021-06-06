@@ -37,6 +37,8 @@ pywhatkit.sendwhatmsg('+911234567890', 'Sample Message', 8, 23)
 
 ---
 
+### Screenshots:
+<img src="png_whatkit.png" height="400px"></img><br>
 Parameters 👇
 
 ```python
@@ -76,5 +78,12 @@ print_waitTime
 (optional, val=True) - Will print the remaining time if set to true
 
 ---
+### Some Common Errors:
 
+`CountryCodeException` - Check if the phone number passed into the parameter has country code<br>
+`Message not getting delivered` - Check internet speed and increase wait_time to 30 or above <br>
+`CallTimeException` - The web takes some time to load so some delay is required, make sure the seconds left is greater than the wait_time<br>
+`SyntaxError` - Make sure the first two parameters are string and the rest are int<br>
+
+---
 Made with 💜.
